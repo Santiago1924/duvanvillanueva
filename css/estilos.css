@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+.contenedor {
+  height: 100vh;
+}
+
+.panel-izquierdo {
+  background-color: #6156DB;
+  color: white;
+  width: 50%;
+  padding: 40px;
+  transition: all 0.5s ease;
+}
+
+.panel-derecho {
+  width: 50%;
+  padding: 40px;
+  transition: all 0.5s ease;
+}
+
+/* Estilo de iconos */
+.iconos-redes i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #555;
+}
+
+.iconos-redes i:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .panel-izquierdo {
+    display: none;
+  }
+
+  .panel-derecho {
+    width: 100%;
+  }
+}
+/* Estilo general para el contenedor */
+.contenedor {
+  height: 100vh;
+}
+
+/* Estilo atractivo para el logo */
+.logo span {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff4d4d, #ffbd69, #00c9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  font-family: 'Poppins', sans-serif;
+  animation: brillo 3s ease-in-out infinite alternate;
+}
+
+/* Animación */
+@keyframes brillo {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(1.4);
+  }
+}
+
+/* Asegurar que el panel izquierdo tenga fondo oscuro y buen padding */
+.panel-izquierdo {
+  width: 40%;
+  background: linear-gradient(135deg,#6156DB);
+  color: white;
+  padding: 30px;
+}
+
+/* Panel derecho ocupa el otro 50% */
+.panel-derecho {
+  width: 60%;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .panel-izquierdo {
+    display: none;
+  }
+  .panel-derecho {
+    width: 100%;
+  }
+}
+
+
